@@ -62,11 +62,14 @@ footer {
     left: 0;
     padding: 1rem;
     text-align: center;
-}
-footer ul {
+} footer ul {
     float: left;
     font-size: 80%;
+} footer ul li:first-child {
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
+
 
 #header {
     align-items: center;
@@ -87,9 +90,5 @@ footer ul {
 
 #mainBody {
     padding-bottom: 50px;
-}
-
-.footerTitle {
-    letter-spacing: 1.5px;
 }
 

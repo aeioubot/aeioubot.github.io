@@ -3,10 +3,17 @@ html {
     height: 100%;
     box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+/*Gets rid of the dumb link styling i hate it*/
+*:link,*:visited {
+  color: white;
+  text-decoration: none;
 }
 
 body {
@@ -21,35 +28,49 @@ body {
     min-height: 100%;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding-right: 75px;
-    text-align: left;
+/*This nav is going to be the full width, but with the elements inside of it padded. Let's also go with a flexbox to align them.*/
+nav {
+  /*Affixes to the top left of the screen and fills the entire width*/
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  /*Size and padding*/
+  height: 50px;
+	width: 100vw;
+  /*Padding both sides by 20% of the view width and setting the text to be vertically-aligned slightly above center*/
+  /*Erm also idk why but its not totally centered with 20/20 so 18/20 for now haha*/
+  padding-left: 18%;
+  padding-right: 20%;
+  line-height: 50px;
+  /*Changing the border to be slighly more aesthetic*/
+	background-color: rgb(50, 54, 59);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+
+  /*Flexbox parent styles. Helps align the items*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+
+  /*imo it looks better without border-radius
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;*/
 }
 
-nav {
-    position: fixed;
-    right: 20%;
-    left: 20%;
-    height: 50px;
-	width: auto;
-	float: left;
-    margin: 0;
-	padding: 0;     
-	background-color: rgb(50, 54, 59);
-    border-bottom: 1px solid #ccc;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+/*Replacing unordered list with a flexbox. Simplifies styling!!*/
+nav a {
+  flex: 1 1 auto;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  transition: 0.1s;
 }
-nav ul {
-    list-style: none;
-    width: 800px;
-    margin: 0 0;
-    padding: 0%;
-}
-nav ul li {
-    float: left; 
+
+nav a:hover {
+  border-bottom: 3px solid white;
+  transition: 0.1s;
 }
 
 
@@ -83,7 +104,7 @@ footer {
     font-size: 25px;
     font-weight: 100;
 }  #header img {
-    padding-top: 20%;
+    padding-top: 15%;
     max-width: 30%;
     max-height: 30%;
 }
@@ -91,4 +112,3 @@ footer {
 #mainBody {
     padding-bottom: 50px;
 }
-

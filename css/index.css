@@ -10,6 +10,8 @@ html {
     box-sizing: inherit;
 }
 
+input, button, submit { border:none; }
+
 /*Gets rid of the dumb link styling i hate it*/
 *:link,*:visited {
   color: white;
@@ -20,8 +22,6 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(54, 57, 62);
-    padding-left: 20%;
-    padding-right: 20%;
     position: relative;
     margin: 0;
     padding-bottom: 6rem;
@@ -83,32 +83,81 @@ footer {
     left: 0;
     padding: 1rem;
     text-align: center;
-} footer ul {
+}
+footer ul {
     float: left;
     font-size: 80%;
-} footer ul li:first-child {
+}
+footer ul li:first-child {
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 
+#hero {
+  background: linear-gradient( rgba(50, 54, 59, 0.5),rgba(50, 54, 59, 0.5) ),url('../img/heropattern.png');
+}
 
 #header {
     align-items: center;
-    text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-} #header h1 {
-    font-size: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3vw 8vw 5vw 8vw;
+    display: flex;
+}
+
+#header hgroup {
+  padding-top: 5%;
+}
+
+#header h1 {
+    font-size: 4em;
+    font-weight: bold;
+    height: 25px;
+}
+#header h2 {
+    font-size: 1.5em;
     font-weight: 100;
-    height: 10px;
-} #header h2 {
-    font-size: 25px;
-    font-weight: 100;
-}  #header img {
-    padding-top: 15%;
-    max-width: 30%;
-    max-height: 30%;
+}
+#header img {
+    padding-top: 10%;
+    max-width: 300px;
+}
+
+#header p {
 }
 
 #mainBody {
     padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.btn {
+  flex: 1 1 auto;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }

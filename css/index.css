@@ -12,7 +12,7 @@ html {
 
 input, button, submit { border:none; }
 
-/*Gets rid of the dumb link styling i hate it*/
+/*Gets rid of the dumb link styling; I hate it.*/
 *:link,*:visited {
   color: white;
   text-decoration: none;
@@ -36,14 +36,14 @@ nav {
   top: 0px;
   /*Size and padding*/
   height: 50px;
-	width: 100vw;
+  width: 100vw;
   /*Padding both sides by 20% of the view width and setting the text to be vertically-aligned slightly above center*/
   /*Erm also idk why but its not totally centered with 20/20 so 18/20 for now haha*/
   padding-left: 18%;
   padding-right: 20%;
   line-height: 50px;
   /*Changing the border to be slighly more aesthetic*/
-	background-color: rgb(50, 54, 59);
+  background-color: rgb(50, 54, 59);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
@@ -131,6 +131,26 @@ footer ul li:first-child {
     padding-bottom: 50px;
     padding-left: 20%;
     padding-right: 20%;
+}
+/*For FAQs page!*/
+#faq_page { 
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3vw 8vw 5vw 17.4vw;
+    display: flex;
+    font-weight: strong;
+}
+/*For Commands page!*/
+#commands_page {
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3vw 8vw 5vw 17.4vw;
+    display: flex;
+    font-weight: strong;
 }
 
 .btn {

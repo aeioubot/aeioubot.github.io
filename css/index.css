@@ -68,7 +68,12 @@ nav a {
   transition: 0.1s;
 }
 
-nav a:hover {
+#selected {
+  opacity: 0.6;
+  border-bottom: 3px solid white;
+}
+
+nav a:not(#selected):hover {
   border-bottom: 3px solid white;
   transition: 0.1s;
 }
@@ -133,7 +138,7 @@ footer ul li:first-child {
     padding-right: 20%;
 }
 /*For FAQs page!*/
-#faq_page { 
+#faq_page {
     align-items: center;
     font-family: Helvetica, Arial, sans-serif;
     max-width: 1500px;

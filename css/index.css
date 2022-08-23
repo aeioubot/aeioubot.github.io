@@ -89,13 +89,9 @@ footer {
     padding: 1rem;
     text-align: center;
 }
-footer ul {
-    float: left;
-    font-size: 80%;
-}
-footer ul li:first-child {
-    font-weight: bold;
-    letter-spacing: 1.5px;
+
+footer a {
+  margin-left: 20px;
 }
 
 #hero {
@@ -139,23 +135,10 @@ footer ul li:first-child {
 }
 /*For FAQs page!*/
 #faq_page {
-    align-items: center;
     font-family: Helvetica, Arial, sans-serif;
     max-width: 1500px;
     margin: 0 auto;
     padding: 3vw 8vw 5vw 17.4vw;
-    display: flex;
-    font-weight: strong;
-}
-/*For Commands page!*/
-#commands_page {
-    align-items: center;
-    font-family: Helvetica, Arial, sans-serif;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 3vw 8vw 5vw 17.4vw;
-    display: flex;
-    font-weight: strong;
 }
 
 .btn {
